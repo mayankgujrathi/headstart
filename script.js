@@ -31,7 +31,7 @@ function mov(tab) {
     l.pop();
     l.push(url);
     window.location.assign(
-      window.location.origin + l.filter((x) => x !== "").join("/")
+      window.location.origin + "/" + l.filter((x) => x !== "").join("/")
     );
   }
   switch (tab) {
