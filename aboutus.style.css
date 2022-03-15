@@ -1,7 +1,7 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main {
@@ -13,7 +13,60 @@ body {
 
 .main h1 {
   text-align: center;
-  color: #a303e3;
+  color: #222;
   font-size: 3rem;
   margin: 2rem;
+}
+
+.main .about {
+  margin-top: 4rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.main .about ul {
+  list-style: none;
+}
+
+.main .about h3,
+.main .about ul,
+.main .about b,
+.main .about p {
+  padding: 1rem;
+}
+
+.main .about ul li {
+  padding: 0.5rem 0;
+}
+
+.main .about ul {
+  padding-top: 0.5rem;
+}
+
+.main .about ul pre {
+  display: inline-block;
+  font-family: monospace;
+}
+
+@media (max-width: 1150px) {
+  .main {
+    width: 95vw;
+    margin: 0.25rem;
+  }
+  .main .about {
+    margin-top: 0;
+    padding: 1rem 1.5rem;
+  }
+  .main .about h3,
+  .main .about ul,
+  .main .about b,
+  .main .about p {
+    padding: 0.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .main {
+    width: 60vw;
+  }
 }
