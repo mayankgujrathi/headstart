@@ -1,17 +1,28 @@
+@font-face {
+  font-family: raleway;
+  src: url(./Raleway.ttf);
+}
+@font-face {
+  font-family: daydream;
+  src: url(./daydream.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-body {
-  overflow: hidden;
+  font-family: 'raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .target {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100%;
+  width: 100%;
+  background-image: url(./bg.gif);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   /* background-color: #222;*/
-  background: linear-gradient(
+ /* background: linear-gradient(
     -45deg,
     #3a0185,
     #a303e3,
@@ -19,12 +30,12 @@ body {
     #3a0185,
     #a303e3,
     #44B3BF
-  );
-  background-size: 400% 400%;
-  overflow: hidden;
+  ); */
+  /* background-size: 400% 400%; */
+  /* overflow: hidden; */
   /* background-image: url(https://w.wallhaven.cc/full/nz/wallhaven-nzl1v0.png); */
   transition: all ease-in-out 500ms;
-  animation: bgcolorchange infinite 12s ease-in-out;
+  /* animation: bgcolorchange infinite 12s ease-in-out; */
 }
 @keyframes bgcolorchange {
   0% {
@@ -67,7 +78,7 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
-  z-index: 3;
+  z-index: 1;
 }
 /* top-nav */
 .top-nav {
@@ -91,17 +102,20 @@ body {
   margin: 0.25rem 5rem;
   padding: 0.25rem 5rem;
   display: inline-block;
+  font-size: large;
   transition: all ease-in-out 250ms;
 }
 .top-nav ul li:hover {
   padding: 0.75rem 6rem;
-  background-color: rgba(163, 3, 227, 0.3);
+  /* background-color: rgba(163, 3, 227, 0.3); */
+  background-color: rgba(34, 34, 34, 0.3);
   border-radius: 100px;
   cursor: pointer;
 }
 .top-nav ul li.active {
   padding: 0.75rem 6rem;
-  background-color: rgba(163, 3, 227, 0.7);
+  /* background-color: rgba(163, 3, 227, 0.7); */
+  background-color: rgba(34, 34, 34, 0.7);
   border-radius: 100px;
   color: white;
   font-weight: bold;
@@ -119,7 +133,7 @@ body {
   display: none;
   width: 100vw;
   height: fit-content;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   padding: .75rem;
@@ -141,21 +155,32 @@ body {
 }
 .bottom-nav ul li:hover {
   padding: 0.75rem 2rem;
-  background-color: rgba(163, 3, 227, 0.3);
+  background-color: rgba(34, 34, 34, 0.3);
   border-radius: 100px;
   cursor: pointer;
 }
 .bottom-nav ul li.active {
   padding: 0.75rem 2rem;
-  background-color: rgba(163, 3, 227, 0.7);
+  background-color: rgba(34, 33, 34, 0.7);
   border-radius: 100px;
   color: white;
   font-weight: bold;
 }
 
+@media (max-width: 1150px)  {
+  .main {
+    padding-top: 5rem;
+    padding-bottom: auto;
+  }
+}
+
 @media (max-width: 1150px) {
   .top-nav {
     display: none;
+  }
+  .main {
+    padding-bottom: 5rem;
+    padding-top: auto;
   }
   .bottom-nav {
     display: block;
