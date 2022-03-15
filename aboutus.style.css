@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 80vw;
+  height: fit-content;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.main h1 {
+  text-align: center;
+  color: #a303e3;
+  font-size: 3rem;
+  margin: 2rem;
+}

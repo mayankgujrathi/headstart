@@ -13,9 +13,9 @@
   }
   //document.querySelector(".target").addEventListener("click", (e) => {
   // console.log(e);
-  let some = new Point(".target");
-  some.render(50);
-  const target = document.querySelector(".target");
+  // let some = new Point(".target");
+  // some.render(50);
+  // const target = document.querySelector(".target");
   // let inc = setInterval(()=> {
   //     some.render(10);
   // }, 1000 * 2 * 5);

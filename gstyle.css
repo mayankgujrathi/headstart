@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 body {
   overflow: hidden;
@@ -11,30 +11,30 @@ body {
   height: 100vh;
   width: 100vw;
   /* background-color: #222;*/
-  background: linear-gradient(0deg, #3a0185, #a303e3);
+  background: linear-gradient(
+    -45deg,
+    #3a0185,
+    #a303e3,
+    #44B3BF,
+    #3a0185,
+    #a303e3,
+    #44B3BF
+  );
+  background-size: 400% 400%;
   overflow: hidden;
   /* background-image: url(https://w.wallhaven.cc/full/nz/wallhaven-nzl1v0.png); */
   transition: all ease-in-out 500ms;
-  animation: bgcolorchange alternate infinite 12s;
+  animation: bgcolorchange infinite 12s ease-in-out;
 }
 @keyframes bgcolorchange {
   0% {
-    background: linear-gradient(0deg, #3a0185, #a303e3);
+    background-position: 0 50%;
   }
-  20% {
-    background: linear-gradient(36deg, #3a0185, #a303e3);
-  }
-  40% {
-    background: linear-gradient(72deg, #3a0185, #a303e3);
-  }
-  60% {
-    background: linear-gradient(108deg, #3a0185, #a303e3);
-  }
-  80% {
-    background: linear-gradient(144deg, #3a0185, #a303e3);
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    background: linear-gradient(100deg, #3a0185, #a303e3);
+    background-position: 0 50%;
   }
 }
 .circle {
@@ -69,6 +69,7 @@ body {
   box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.2);
   z-index: 3;
 }
+/* top-nav */
 .top-nav {
   position: absolute;
   top: 0;
@@ -77,6 +78,7 @@ body {
   height: fit-content;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
+  z-index: 3;
 }
 .top-nav ul {
   list-style: none;
@@ -110,5 +112,52 @@ body {
   }
   .top-nav ul li {
     color: black;
+  }
+}
+/* bottom-nav */
+.bottom-nav {
+  display: none;
+  width: 100vw;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: .75rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  z-index: 3;
+}
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom-nav ul li {
+  color: white;
+  padding: 0.25rem 2rem;
+  display: inline-block;
+  transition: all ease-in-out 250ms;
+}
+.bottom-nav ul li:hover {
+  padding: 0.75rem 2rem;
+  background-color: rgba(163, 3, 227, 0.3);
+  border-radius: 100px;
+  cursor: pointer;
+}
+.bottom-nav ul li.active {
+  padding: 0.75rem 2rem;
+  background-color: rgba(163, 3, 227, 0.7);
+  border-radius: 100px;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 1150px) {
+  .top-nav {
+    display: none;
+  }
+  .bottom-nav {
+    display: block;
   }
 }
