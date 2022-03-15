@@ -24,3 +24,25 @@
   // }, 1000 * 2 * 5 * 3);
   //});
 })();
+
+function mov(tab) {
+  function seturl(url) {
+    let l = window.location.pathname.split("/");
+    l.pop();
+    l.push(url);
+    window.location.assign(
+      window.location.origin + l.filter((x) => x !== "").join("/")
+    );
+  }
+  switch (tab) {
+    case "home":
+      seturl("/index.html");
+      break;
+    case "event":
+      seturl("/events.html");
+      break;
+    case "about":
+      seturl("/about.html");
+      break;
+  }
+}
