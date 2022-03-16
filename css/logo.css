@@ -24,7 +24,7 @@
 
 .main img {
   height: 100%;
-  width: 350px;
+  width: 450px;
   animation: pop 5s ease-in-out infinite;
 }
 
@@ -82,21 +82,21 @@
   .main .title-sudhee .text,
   .main .title-sudhee .arrow,
   .main .title-headstart {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .main .title-headstart {
     font-size: 3rem;
   }
   .main .dept {
-    font-size: .8rem;
+    font-size: 0.7rem;
   }
   .main .title-headstart-sub {
-    font-size: 3rem;
-  }
-  .main .title-headstart-sub {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .main .title-headstart-time {
     font-size: 1rem;
+  }
+  .main img {
+    width: 350px;
   }
 }

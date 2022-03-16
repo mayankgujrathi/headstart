@@ -12,16 +12,41 @@ body {
 }
 
 .main h1 {
+  font-size: 2rem;
   text-align: center;
-  color: #222;
-  font-size: 3rem;
-  margin: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main h1 .text {
+  color: white;
+  text-shadow: 0 0 3px rgba(255, 255, 255, .4);
+}
+
+.main h1 .arrow {
+  color: #44b3bf;
+  font-weight: bolder;
+  text-shadow: 0 0 4px #44b3bf;
+  text-shadow: 0 0 3px rgba(255, 255, 255, .4);
 }
 
 .main .about {
-  margin-top: 4rem;
+  margin-top: 1.5rem;
   border-radius: 1rem;
   padding: 1rem 2rem;
+}
+
+.main .about .link {
+  color: #44b3bf;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main .about .title {
+  font-size: xx-large;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  text-shadow: 0 0 3px #222;
 }
 
 .main .about ul {
@@ -32,6 +57,7 @@ body {
 .main .about ul,
 .main .about b,
 .main .about p {
+  font-size: medium;
   padding: 1rem;
 }
 
@@ -54,14 +80,14 @@ body {
     margin: 0.25rem;
   }
   .main .about {
-    margin-top: 0;
-    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
   }
   .main .about h3,
   .main .about ul,
   .main .about b,
   .main .about p {
-    padding: 0.5rem;
+    padding: .25rem;
   }
 }
 
