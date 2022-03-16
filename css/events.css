@@ -30,9 +30,13 @@
 .main .card .title {
   font-size: x-large;
   padding-bottom: .5rem;
+  padding-top: .5rem;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-.main .card .desc {
+.main .card .desc,
+.main .card p {
   font-size: medium;
   padding-bottom: .5rem;
 }
@@ -72,6 +76,9 @@
   }
   .main {
     font-size: 1.5rem;
+  }
+  .main .card .title {
+    font-size: large;
   }
 }
 
