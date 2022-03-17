@@ -10,22 +10,40 @@
   min-width: 100vw;
   height: 100%;
   width: 100%;
-  background-image: url(./../asset/bg_earth.gif);
+  /* background-image: url(./../asset/bg.gif);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: #222;
+  background-color: #222; */
   overflow-y: auto;
   overflow-x: hidden;
- /* background: linear-gradient(
+  /* background: linear-gradient(
     -45deg,
-    #3a0185,
+    /* pink, cyan */
+    /* #3a0185,
     #a303e3,
     #44B3BF,
     #3a0185,
     #a303e3,
-    #44B3BF
+    #44B3BF */
+
+    /* new 1 */
+    /* #a303e3,
+    #44B3BF,
+    #a303e3,
+    #44B3BF */
+
+    /* new 2 */
+    /* #222,
+    #eb4f4f,
+    #00f
   ); */
+  background: linear-gradient(320.54deg, #00069F 0%, #120010 72.37%), linear-gradient(58.72deg, #69D200 0%, #970091 100%), linear-gradient(121.28deg, #8CFF18 0%, #6C0075 100%), linear-gradient(121.28deg, #8000FF 0%, #000000 100%), linear-gradient(180deg, #00FF19 0%, #24FF00 0.01%, #2400FF 100%), linear-gradient(52.23deg, #0500FF 0%, #FF0000 100%), linear-gradient(121.28deg, #32003A 0%, #FF4040 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+  background-blend-mode: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge, normal;
+
+  /* background: linear-gradient(235deg, #BABC4A 0%, #000000 100%), linear-gradient(235deg, #0026AC 0%, #282534 100%), linear-gradient(235deg, #00FFD1 0%, #000000 100%), radial-gradient(120% 185% at 25% -25%, #EEEEEE 0%, #EEEEEE 40%, #7971EA calc(40% + 1px), #7971EA 50%, #393E46 calc(50% + 1px), #393E46 70%, #222831 calc(70% + 1px), #222831 100%), radial-gradient(70% 140% at 90% 10%, #F5F5C6 0%, #F5F5C6 30%, #7DA87B calc(30% + 1px), #7DA87B 60%, #326765 calc(60% + 1px), #326765 80%, #27253D calc(80% + 1px), #27253D 100%);
+  background-blend-mode: overlay, lighten, overlay, color-burn, normal; */
+
   /* background-size: 400% 400%; */
   /* overflow: hidden; */
   /* background-image: url(https://w.wallhaven.cc/full/nz/wallhaven-nzl1v0.png); */

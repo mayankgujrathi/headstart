@@ -13,11 +13,17 @@
             ${event.desc}
         </p>
         <div class="links">
+        ${
+          event.link
+            ? `
           <span
-            onclick="window.open('https://github.com/mayankgujrathi', '_blank')"
+            onclick="window.open('${event.link}', '_blank')"
             class="register"
             >Register</span
           >
+        `
+            : ""
+        }
         </div>
       </div>
         `;
@@ -27,6 +33,7 @@
   const el = new EventList(".main", [
     {
       name: "Technical Paper Presentation",
+      link: "https://forms.gle/BAU8QVFFke7NwhE99",
       desc: `<p>Here is an amazing opportunity to showcase your
 ideas on a unique and massive platform in the form
 of well integrated and intriguing presentation. It
@@ -41,6 +48,7 @@ highly qualified judges.</p>`,
     },
     {
       name: "Technical Project /Prototype Presentation",
+      link: "https://forms.gle/BAU8QVFFke7NwhE99",
       desc: `<p>Project presentation is a platform which provides you
 with a awestruck opportunity to showcase best of the
 projects you worked on!!</p>
@@ -58,6 +66,7 @@ take guidance and pave your way ahead!!</p>`,
     },
     {
       name: "Technical Poster Presentation",
+      link: "https://forms.gle/BAU8QVFFke7NwhE99",
       desc: `<p>Poster presentation - Ideathon is a platform which
 provides you with an amazing opportunity to showcase
 your ideas on a unique platform in the form of a poster
@@ -69,6 +78,7 @@ audience using a combination of visuals and text.</p>`,
     },
     {
       name: "Treasure Hunt",
+      link: "https://forms.gle/BewPvWxV4gNiwWFq5",
       desc: `<p>Treasure Hunt is an event which tests your basic
 decoding skills .Using simple coding and aptitude skills
 advance your way through the clues and find the
@@ -78,6 +88,7 @@ find the treasure.</p>
     },
     {
       name: "KODECRYPT",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeEs0nH3vG_AElkS9li4K-pVvHu5gZ313xFGpdZS7BbkEEsCQ/viewform",
       desc: `<p>Kodecrypt is the flagship event of Headstart, which tests
 your programming and problem solving skills. You must
 solve tricky and interesting programming questions in
@@ -95,6 +106,7 @@ in people who solve at the earliest qualify.</p>`,
     },
     {
       name: "Technical Online Quiz- FAST AND FURIOUS",
+      link: "https://forms.gle/RZYEWBfPEuLM1EFeA",
       desc: `<p>"A fun and supersonic celebration of technology!!"</p>
 <p>Get ready for a roller coaster ride into the intense world
 of techno quizzing.</p>
@@ -112,6 +124,7 @@ tech wizards.</p>`,
     },
     {
       name: "BUGBEATERS",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSd6fjbgcI6qtQCbzZusCUfSp2ZcFWp7lBqRkN8BKh6lLa-SIg/viewform?usp=pp_url",
       desc: `<p>BugBeaters is a debugging event. It tests participants
 ability to find corner cases and solve minor issues
 present in the code and come up with a working solution
@@ -124,6 +137,7 @@ into the final round.</p>`,
     },
     {
       name: "DESIGN FREAKS",
+      link: "https://forms.gle/Ns8rLixPXH1J1WZ8A",
       desc: `<p>Design freaks is an established and popular event of
 Headstart which focuses on how well a person can
 design eye catching User Interfaces (UI) for web
@@ -137,6 +151,7 @@ decided.</p>`,
     },
     {
       name: "DATA ADDICTS",
+      link: "https://forms.gle/yP4BbcNkz4xB9jmn8",
       desc: `<p>DataAddicts is an event based on DBMS. It provides the
 perfect platform to showcase your querying skills. It
 provides intriguing challenges to test your passion for
@@ -151,6 +166,7 @@ database.</p>`,
     },
     {
       name: "C-STAR",
+      link: "https://forms.gle/wacqag9PB1HWYhss5",
       desc: `<p>This event brings you an opportunity to prove your skills
 in C. You can tackle questions from basics to the
 complex of its concepts. This event consists of 3 rounds.</p>
@@ -164,6 +180,7 @@ certificates.</p>`,
     },
     {
       name: "TIC TECH TOE",
+      link: "https://forms.gle/5j2h86iVjGVjXGVx7",
       desc: `<p>This event is based on the traditional game TIC TAC
 TOE. Each participant is expected to solve the logical
 questions in a vertical or horizontal or diagonal
@@ -175,6 +192,7 @@ limit will be considered for the next round.</p>
     },
     {
       name: "FIND FIT FINISH",
+      link: "https://forms.gle/f3CAEczDzaC9a8Y69",
       desc: `<p>Find Fit Finish is an event that tests the quickness of an
 individual.</p>
 <p>In first round "Logical Quiz", we will be testing the IQ
@@ -192,6 +210,7 @@ logical abilities.</p>`,
     },
     {
       name: "MLit",
+      link: "https://forms.gle/XBet5K3ft4C88mfh7",
       desc: `<p>MLit is Machine Learning Iconic Trail,we’'ll assess
 whether your knowledge is credit worthy or not.</p>
 <p>We’ll be having 3 rounds</p>
