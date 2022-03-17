@@ -38,11 +38,14 @@
     #eb4f4f,
     #00f
   ); */
-  background: linear-gradient(320.54deg, #00069F 0%, #120010 72.37%), linear-gradient(58.72deg, #69D200 0%, #970091 100%), linear-gradient(121.28deg, #8CFF18 0%, #6C0075 100%), linear-gradient(121.28deg, #8000FF 0%, #000000 100%), linear-gradient(180deg, #00FF19 0%, #24FF00 0.01%, #2400FF 100%), linear-gradient(52.23deg, #0500FF 0%, #FF0000 100%), linear-gradient(121.28deg, #32003A 0%, #FF4040 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
-  background-blend-mode: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge, normal;
+  /* background: linear-gradient(320.54deg, #00069F 0%, #120010 72.37%), linear-gradient(58.72deg, #69D200 0%, #970091 100%), linear-gradient(121.28deg, #8CFF18 0%, #6C0075 100%), linear-gradient(121.28deg, #8000FF 0%, #000000 100%), linear-gradient(180deg, #00FF19 0%, #24FF00 0.01%, #2400FF 100%), linear-gradient(52.23deg, #0500FF 0%, #FF0000 100%), linear-gradient(121.28deg, #32003A 0%, #FF4040 100%), radial-gradient(50% 72.12% at 50% 50%, #EB00FF 0%, #110055 100%);
+  background-blend-mode: screen, color-dodge, color-burn, screen, overlay, difference, color-dodge, normal; */
 
   /* background: linear-gradient(235deg, #BABC4A 0%, #000000 100%), linear-gradient(235deg, #0026AC 0%, #282534 100%), linear-gradient(235deg, #00FFD1 0%, #000000 100%), radial-gradient(120% 185% at 25% -25%, #EEEEEE 0%, #EEEEEE 40%, #7971EA calc(40% + 1px), #7971EA 50%, #393E46 calc(50% + 1px), #393E46 70%, #222831 calc(70% + 1px), #222831 100%), radial-gradient(70% 140% at 90% 10%, #F5F5C6 0%, #F5F5C6 30%, #7DA87B calc(30% + 1px), #7DA87B 60%, #326765 calc(60% + 1px), #326765 80%, #27253D calc(80% + 1px), #27253D 100%);
   background-blend-mode: overlay, lighten, overlay, color-burn, normal; */
+
+  background: radial-gradient(65% 100% at 50% 0%, #00FF94 0%, rgba(0, 255, 148, 0.25) 100%), linear-gradient(230deg, #000000 25%, #170059 100%), linear-gradient(215deg, #FFEBB9 10%, #19004E 80%), radial-gradient(100% 245% at 100% 100%, #FFFFFF 0%, #000353 100%), linear-gradient(125deg, #1400FF 0%, #3A0000 100%), linear-gradient(225deg, #00F0FF 30%, #000B6F 45%, #00EBFC 45%, #001676 65%, #00E1F6 65%, #001676 85%, #00ECFD 85%, #001676 100%), linear-gradient(135deg, #00F0FF 0%, #000B6F 15%, #00EBFC 15%, #001676 35%, #00E1F6 35%, #001676 55%, #00ECFD 55%, #001676 100%);
+  background-blend-mode: soft-light, screen, overlay, overlay, difference, overlay, normal;
 
   /* background-size: 400% 400%; */
   /* overflow: hidden; */
@@ -111,7 +114,7 @@
   justify-content: center;
 }
 .top-nav ul li {
-  color: white;
+  color: #222;
   margin: 0.25rem 5rem;
   padding: 0.25rem 5rem;
   display: inline-block;
@@ -122,7 +125,8 @@
   padding: 0.75rem 6rem;
   /* background-color: rgba(163, 3, 227, 0.3); */
   /* background-color: rgba(34, 34, 34, 0.3); */
-  background-color: rgba(124, 1, 42, 0.3);
+  /* background-color: rgba(124, 1, 42, 0.3); */
+  background-color: rgba(10, 5, 83, 0.3);
   border-radius: 100px;
   cursor: pointer;
 }
@@ -130,7 +134,8 @@
   padding: 0.75rem 6rem;
   /* background-color: rgba(163, 3, 227, 0.7); */
   /* background-color: rgba(34, 34, 34, 0.7); */
-  background-color: rgba(124, 1, 42, 0.7);
+  /* background-color: rgba(124, 1, 42, 0.7); */
+  background-color: rgba(10, 5, 83, 0.7);
   border-radius: 100px;
   color: white;
   font-weight: bold;
@@ -163,22 +168,24 @@
   align-items: center;
 }
 .bottom-nav ul li {
-  color: white;
+  color: #222;
   padding: 0.25rem 2rem;
   display: inline-block;
   transition: all ease-in-out 250ms;
 }
 .bottom-nav ul li:hover {
   padding: 0.75rem 2rem;
-  background-color: rgba(124, 1, 42, 0.3);
+  /* background-color: rgba(124, 1, 42, 0.3); */
   /* background-color: rgba(34, 34, 34, 0.3); */
+  background-color: rgba(10, 5, 83, 0.3);
   border-radius: 100px;
   cursor: pointer;
 }
 .bottom-nav ul li.active {
   padding: 0.75rem 2rem;
-  background-color: rgba(124, 1, 42, 0.7);
+  /* background-color: rgba(124, 1, 42, 0.7); */
   /* background-color: rgba(34, 33, 34, 0.7); */
+  background-color: rgba(10, 5, 83, 0.7);
   border-radius: 100px;
   color: white;
   font-weight: bold;

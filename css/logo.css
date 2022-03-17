@@ -35,9 +35,11 @@
 
 .main .title-sudhee .arrow {
   font-size: 3rem;
-  color: #44b3bf;
+  /* color: #44b3bf; */
+  /* color: #06EB46; */
+  color: #097C3F;
   font-weight: bolder;
-  text-shadow: 0 0 1px #44b3bf;
+  text-shadow: 0 0 2px #097C3F;
 }
 
 .main .title-sudhee .text,
@@ -47,7 +49,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 0 1px white;
+  text-shadow: 0 0 2px white;
 }
 
 .main .title-headstart {
@@ -58,11 +60,11 @@
 .main .dept,
 .main .title-headstart-sub {
   font-size: 2rem;
-  color: #deb887;
+  color: #1be5fc;
   font-weight: bolder;
   text-transform: uppercase;
   margin-bottom: 0;
-  text-shadow: 0 0 1px #deb887;
+  text-shadow: 0 0 2px #097C3F;
 }
 
 .main .title-headstart-sub {
@@ -71,11 +73,11 @@
 
 .main .title-headstart-time {
   font-size: 1.3rem;
-  color: #eb4f4f;
+  color: #16174e;
   font-weight: bolder;
   text-transform: uppercase;
   margin-bottom: 0;
-  text-shadow: 0 0 2px #b22;
+  text-shadow: 0 0 2px #11123F;
 }
 
 @media (max-width: 1150px) {
