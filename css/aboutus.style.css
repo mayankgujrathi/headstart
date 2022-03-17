@@ -36,7 +36,7 @@ body {
 }
 
 .main .about .link {
-  color: #44b3bf;
+  color: #7c012a;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -45,7 +45,7 @@ body {
   font-size: xx-large;
   text-align: center;
   text-transform: capitalize;
-  color: white;
+  color: #ddd;
   text-shadow: 0 0 3px #222;
 }
 

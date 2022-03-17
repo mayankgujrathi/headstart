@@ -37,7 +37,7 @@
   font-size: 3rem;
   color: #44b3bf;
   font-weight: bolder;
-  text-shadow: 0 0 4px #44b3bf;
+  text-shadow: 0 0 1px #44b3bf;
 }
 
 .main .title-sudhee .text,
@@ -47,7 +47,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   text-align: center;
-  text-shadow: 0 0 4px white;
+  text-shadow: 0 0 1px white;
 }
 
 .main .title-headstart {
@@ -62,7 +62,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   margin-bottom: 0;
-  text-shadow: 0 0 4px #deb887;
+  text-shadow: 0 0 1px #deb887;
 }
 
 .main .title-headstart-sub {
@@ -75,7 +75,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   margin-bottom: 0;
-  text-shadow: 0 0 4px #b22;
+  text-shadow: 0 0 2px #b22;
 }
 
 @media (max-width: 1150px) {
@@ -98,5 +98,14 @@
   }
   .main img {
     width: 350px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main img {
+    width: 600px;
+  }
+  .main .title-headstart {
+    font-size: 5rem;
   }
 }

@@ -121,14 +121,16 @@
 .top-nav ul li:hover {
   padding: 0.75rem 6rem;
   /* background-color: rgba(163, 3, 227, 0.3); */
-  background-color: rgba(34, 34, 34, 0.3);
+  /* background-color: rgba(34, 34, 34, 0.3); */
+  background-color: rgba(124, 1, 42, 0.3);
   border-radius: 100px;
   cursor: pointer;
 }
 .top-nav ul li.active {
   padding: 0.75rem 6rem;
   /* background-color: rgba(163, 3, 227, 0.7); */
-  background-color: rgba(34, 34, 34, 0.7);
+  /* background-color: rgba(34, 34, 34, 0.7); */
+  background-color: rgba(124, 1, 42, 0.7);
   border-radius: 100px;
   color: white;
   font-weight: bold;
