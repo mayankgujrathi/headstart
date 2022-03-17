@@ -170,13 +170,15 @@
 }
 .bottom-nav ul li:hover {
   padding: 0.75rem 2rem;
-  background-color: rgba(34, 34, 34, 0.3);
+  background-color: rgba(124, 1, 42, 0.3);
+  /* background-color: rgba(34, 34, 34, 0.3); */
   border-radius: 100px;
   cursor: pointer;
 }
 .bottom-nav ul li.active {
   padding: 0.75rem 2rem;
-  background-color: rgba(34, 33, 34, 0.7);
+  background-color: rgba(124, 1, 42, 0.7);
+  /* background-color: rgba(34, 33, 34, 0.7); */
   border-radius: 100px;
   color: white;
   font-weight: bold;
