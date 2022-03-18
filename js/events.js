@@ -78,7 +78,8 @@ audience using a combination of visuals and text.</p>`,
     },
     {
       name: "Treasure Hunt",
-      link: "https://forms.gle/BewPvWxV4gNiwWFq5",
+      // link: "https://forms.gle/BewPvWxV4gNiwWFq5",
+      link: "https://forms.gle/o8Upig67MAStwXpi9",
       desc: `<p>Treasure Hunt is an event which tests your basic
 decoding skills .Using simple coding and aptitude skills
 advance your way through the clues and find the
